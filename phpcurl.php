@@ -3,7 +3,7 @@
 $curl= curl_init();
 $search_string="movies 2015";
 
-$url="https://www.amazon.com/s/filled-keywords=";
+$url="https://www.amazon.com/s/filled-keywords=$search_string";
 
 curl_setopt($curl, CURLOPT_URL, 'https://www.amazon.com');
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
