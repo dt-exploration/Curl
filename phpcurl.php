@@ -15,11 +15,15 @@
 $konekt=curl_init();
 $url="https://www.google.com";
 curl_setopt($konekt, CURLOPT_URL, $url);
-curl_setopt($konekt,CURLOPT_RETURNTRANSFER,1);
+//curl_setopt($konekt,CURLOPT_RETURNTRANSFER,1);
 
-$result=curl_exec($konekt);
+$file=fopen("dt.txt", "w");
+curl_setopt($konekt, CURLOPT_FILE, $file);
+curl_exec($konekt);
 curl_close($konekt);
-var_dump($result);
+
+fclose($file);
+
 
 
 
