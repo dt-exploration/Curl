@@ -23,16 +23,16 @@ curl_exec($konekt);
 curl_close($konekt);
 fclose($file);
 */
-$url="https://www.google.com";
-$ch=curl_init();
+$url=  "https://www.google.com";
+$ch = curl_init();
 
-curl_setopt($ch,CURLOPT_URL,$url);
-curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);
-curl_setopt($ch,CURLOPT_HEADER,true);
-curl_setopt($ch,CURLOPT_NOBODY,true);
+curl_setopt($ch, CURLOPT_URL,$url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER,TRUE);
+curl_setopt($ch, CURLOPT_HEADER,true);
+curl_setopt($ch, CURLOPT_NOBODY,true);
 
-$output=curl_exec($ch);
-$http_code=curl_getinfo($ch,CURLINFO_HTTP_CODE);
+$output = curl_exec($ch);
+$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 curl_close($ch);
 
