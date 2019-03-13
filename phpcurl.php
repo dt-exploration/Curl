@@ -1,6 +1,6 @@
 <?php
 
-//$curl= curl_init();
+//$curl = curl_init();
 //$search_string="movies 2015";
 //$url="http://tuck.rs/cms/search.php?id=99&startfrom=0&keyword=hk&submit=Pretraga";
 //curl_setopt($curl, CURLOPT_URL, $url);
